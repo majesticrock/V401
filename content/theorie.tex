@@ -1,6 +1,6 @@
 \section{Zielsetzung}
 
-In diesem Versuch soll die Wellenlänge eines Lasers und die Brechungsindezes von Luft bei verschiedenen Drücken mit einem Michelson-Interferometer untersucht werden.
+In diesem Versuch soll die Wellenlänge eines Lasers und die Brechungsindizes von Luft bei verschiedenen Drücken mit einem Michelson-Interferometer untersucht werden.
 
 \section{Theorie}
 \label{sec:Theorie}
@@ -14,8 +14,8 @@ Licht ist eine elektromagnetische Welle, bei der sich die Feldstärke am Ort $x$
     E(x,t) = E_0 \cos(kx - \omega t - \delta)
 \end{equation}
 
-bestimmt werden kann. Dabei ist $k = \dfrac{2\pi}{\lambda}$ mit der Wellenlänge $\lambda$ die Wellenzahl, $\omega$ die Kreisfrequenz und $\delta$ eine beliebige Phase.
-Da die Maxwell-Gleichungen lineare partielle Differentialgleichungen sind, gilt für die Lösungen dieser, also in diesem Fall \eqref{eqn:allg-loesung}, das Superpositionsprinzip.
+bestimmen lässt. Dabei ist $k = \dfrac{2\pi}{\lambda}$ mit der Wellenlänge $\lambda$ die Wellenzahl, $\omega$ die Kreisfrequenz und $\delta$ eine beliebige Phase.
+Da die Maxwell-Gleichungen lineare partielle Differentialgleichungen sind, gilt für die Lösungen dieser, also in diesem Fall Gleichung \eqref{eqn:allg-loesung}, das Superpositionsprinzip.
 In der Praxis wird häufig die Intensität gemessen, da diese sich einfacher beobachten lässt. Diese berechnet sich dabei über
 
 \begin{equation}
@@ -32,9 +32,9 @@ Damit ergibt sich bei der Superposition von zwei Wellen eine Intensität von
 Der letzte Summand bildet den sogenannten Interferenzterm. Dieser ist abhängig von den Phasen der beiden Wellen und sorgt dafür, dass die Gesamtintensität zwischen $+ \text{const} \cdot 2 |E_0|^2$ und $- \text{const} \cdot 2 |E_0|^2$ schwanken kann.
 Daraus folgt des Weiteren, dass die Intensität verschwindet, wenn $\delta_2 - \delta_1$ ein ungerades Vielfaches von $\pi$ ist.
 
-Es ist jeodch zu beachten, dass Licht aus verschiedenen Quellen im Allgemeinen nicht interferenzfähig ist.
+Es ist jedoch zu beachten, dass Licht aus verschiedenen Quellen im Allgemeinen nicht interferenzfähig ist.
 Dies liegt daran, dass das Licht bei der Emittierung in Atom statistisch verteilt ist und der Interferenzterm verschwindet, wenn über einen genügend großen Zeitraum gemittelt wird.
-Diese Art von Licht wird inkohärent genannt. Im Gegensatz dazu steht das sogenannte kohärente Licht, welches nach \eqref{eqn:allg-loesung} ein festes $k$, $\omega$ sowie $\delta$ besitzt.
+Diese Art von Licht wird inkohärent genannt. Im Gegensatz dazu steht das sogenannte kohärente Licht, welches nach Gleichung \eqref{eqn:allg-loesung} ein festes $k$, $\omega$ sowie $\delta$ besitzt.
 In der Praxis werden häufig Laser genutzt, um solches Licht zu erzeugen.
 Dabei ist die sogenannte Kohärenzlänge $l_C$ eben diese, die das Licht in der Zeit zurücklegt, in der von der Quelle noch Licht mit den oben benannten Eigenschaften aussendet.
 Bei natürlichem Licht liegt dies im Bereich von $10^{-6}$ m, Laser hingegen erreichen weit höhere Längen.
@@ -60,7 +60,7 @@ Verschiebt man den einen der Spiegel um eine Distanz $\Delta d$ so ergibt sich f
 
 \begin{equation}
     \label{eqn:verschieben}
-    \delta d = \frac{z \lambda}{2}.
+    \Delta d = \frac{z \lambda}{2}.
 \end{equation}
 
 Des Weiteren kann ein optischer Wegunterschied erzeugt werden in dem vor einem der Spiegel ein Medium der Breite $b$ und mit dem Brechungsindex $n + \Delta n$ angebracht wird.
@@ -78,7 +78,7 @@ Praktisch lässt sich das $\Delta n$ durch Druckänderung in einem Gas realisier
     n = \sqrt{1 + f(\lambda) N},
 \end{equation}
 
-wobei $N$ die Zahl der zu Schwingungen angeregten Dipole pro Volumeneinheit ist. Jedoch ist im Bereich $fN \ll 1$ weshalb die Näherung
+wobei $N$ die Zahl der zu Schwingungen angeregten Dipole pro Volumeneinheit ist. Jedoch ist im Bereich des sichtbaren Lichtes $fN \ll 1$ weshalb die Näherung
 
 \begin{equation}
     n = 1 + \frac{fN}{2}
