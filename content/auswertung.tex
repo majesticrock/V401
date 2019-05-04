@@ -1,2 +1,53 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+    \subsection{Bestimmung der Wellenlänge des Lasers}
+        Zur Bestimmung der Wellenlänge des Lichtes des Lasers, werden aus den gemessenen Daten zu den Verschiebungen des Spiegels 
+        $\Delta d$ und der zugehörigen Anzahl an Interferenzmaxima $z$ mittels Gleichung \eqref{eqn:verschieben} die jeweiligen 
+        Wellenlängen $\lambda$ bestimmt. Zu Beachten ist hierbei allerdings die Hebelübersetzung $U$ am Spiegel, womit alle gemessenen Verschiebungen
+        $\Delta d$ zunächst mit einem Faktor $\frac{1}{U}$ multipliziert werden müssen. Hier ist die Hebelübersetzung als $U = 5.017$ bekannt.
+        Alle beschriebenen Werte sind in \autoref{tab:messung1} zu sehen.
+        \input{../content/messung1.tex}
+        Die bestimmten Wellenlängen werden über 
+        \begin{equation}
+        \label{eqn:mittellung}
+            \overline{\lambda} = \frac{1}{10} \sum_{i = 1}^{10} \lambda_{i}
+        \end{equation}
+        gemittelt, wobei $\lambda_{i}$ die einzelnen Wellenlängen sind, welche in \autoref{tab:messung1} zu sehen sind.
+        Der Fehler dieses Mittelwertes lässt sich mittels 
+        \begin{equation}
+        \label{eqn:fehler_mittel}
+            \Delta \overline{\lambda} = \frac{1}{\sqrt{90}} \sqrt{\sum_{i=1}^{10} (\lambda_i - \overline{\lambda})^2}
+        \end{equation}    
+        errechnen, womit sich die gemittelte Wellenlänge dann zu 
+        \\ \\
+        \centerline{$\overline{\lambda} = (633.52 \pm 1.86) \cdot 10^{-9} $ m}
+        \\ \\
+        ergibt.
+    \subsection{Bestimmung des Brechungsindizes von Luft}
+            Zur Bestimmung des Brechungsindizes von Luft wird bei einem ansteigenden Druck angefangen bei $0.4$ bar jeweils 10 mal 
+            die Anzahl der Interferenzmaxima $z$ aufgenommen. Wie in \autoref{tab:messung2} zu sehen ist, ist hier 10 mal der gleiche 
+            Messwert aufgenommen worden, weshalb die Betrachtung einer Abweichung hier unsinnig ist und der Wert von $z = 24$ als genau 
+            angenommen wird.
+            \input{../content/messung2.tex}
+            Über Gleichung \eqref{eqn:brech} kann die Änderung des Brechungsindizes $\Delta n$ bestimmt werden, wobei
+            $b = 50 \cdot 10^{-3}$ m die Größe der Messzelle und $\lambda$ die im vorherigen Auswertungsteil bestimmte Wellenlänge ist.
+            Der Wert ergibt sich somit zu 
+            \\ \\
+            \centerline{$\Delta n = (0.1520 \pm 0.0004) \cdot 10^{-3}$,}
+            \\ \\
+            wobei der sich der Fehler über 
+            \begin{equation}
+               \symup{d} \Delta n = \frac{z}{2 \cdot b} \Delta \lambda
+            \end{equation}
+            berechnet. Hierbei ist $\Delta \lambda$ der Fehler der Wellenlänge.
+            Der tatsächliche Brechungsindex $n$ lässt sich über ??? bestimmen, wobei $T_0 = 273.15$ K die Normaltemperatur, $p_0 = 1.032$ bar 
+            der Normaldruck ist. Die Umgebungstemperatur beträgt $T = 293.15$ K. Des Weiteren ist die Messung bei Drücken von $p' = 0.4$ bar
+            bis $p = 1$ bar durchgeführt worden. Damit ist der Brechungsindex
+            \\ \\
+            \centerline{$n = 1.0002756 \pm 0.0000008$,}
+            \\ \\
+            wobei sich der Fehler über
+            \begin{equation}
+                \symup{d} n = \frac{T}{T_0} \frac{p_0}{p- p'} \cdot d \Delta n
+            \end{equation}
+            errechnet.    
