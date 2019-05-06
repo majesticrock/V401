@@ -3,8 +3,8 @@
     \subsection{Bestimmung der Wellenlänge des Lasers}
         Zur Bestimmung der Wellenlänge des Lichtes des Lasers, werden aus den gemessenen Daten zu den Verschiebungen des Spiegels 
         $\Delta d$ und der zugehörigen Anzahl an Interferenzmaxima $z$ mittels Gleichung \eqref{eqn:verschieben} die jeweiligen 
-        Wellenlängen $\lambda$ bestimmt. Zu Beachten ist hierbei allerdings die Hebelübersetzung $U$ am Spiegel, womit alle gemessenen Verschiebungen
-        $\Delta d$ zunächst mit einem Faktor $\frac{1}{U}$ multipliziert werden müssen. Hier ist die Hebelübersetzung als $U = 5.017$ bekannt.
+        Wellenlängen $\lambda$ bestimmt. Zu beachten ist hierbei allerdings die Übersetzung $U$ am Spiegel, womit alle gemessenen Verschiebungen
+        $\Delta d$ zunächst mit einem Faktor $\frac{1}{U}$ multipliziert werden müssen. Hier ist die Übersetzung als $U = 5.017$ bekannt.
         Alle beschriebenen Werte sind in \autoref{tab:messung1} zu sehen.
         \input{../content/messung1.tex}
         Die bestimmten Wellenlängen werden über 
@@ -24,7 +24,7 @@
         \\ \\
         ergibt.
     \subsection{Bestimmung des Brechungsindizes von Luft}
-            Zur Bestimmung des Brechungsindizes von Luft wird bei einem ansteigenden Druck angefangen bei $0.4$ bar jeweils 10 mal 
+            Zur Bestimmung des Brechungsindizes von Luft wird bei ansteigenden Druck (von $0.4$ bar bis 1 bar), jeweils 10 mal 
             die Anzahl der Interferenzmaxima $z$ aufgenommen. Wie in \autoref{tab:messung2} zu sehen ist, ist hier 10 mal der gleiche 
             Messwert aufgenommen worden, weshalb die Betrachtung einer Abweichung hier unsinnig ist und der Wert von $z = 24$ als genau 
             angenommen wird.
@@ -35,9 +35,9 @@
             \\ \\
             \centerline{$\Delta n = (0.1520 \pm 0.0004) \cdot 10^{-3}$,}
             \\ \\
-            wobei der sich der Fehler über 
+            wobei sich der Fehler über 
             \begin{equation}
-               \symup{d} \Delta n = \frac{z}{2 \cdot b} \Delta \lambda
+               \sigma_{\symup{\Delta n}} = \frac{z}{2 \cdot b} \Delta \lambda
             \end{equation}
             berechnet. Hierbei ist $\Delta \lambda$ der Fehler der Wellenlänge.
             Der tatsächliche Brechungsindex $n$ lässt sich über Gleichung \eqref{eqn:n-final} bestimmen, wobei $T_0 = 273.15$ K die Normaltemperatur, $p_0 = 1.032$ bar 
@@ -48,6 +48,6 @@
             \\ \\
             wobei sich der Fehler über
             \begin{equation}
-                \symup{d} n = \frac{T}{T_0} \frac{p_0}{p- p'} \cdot d \Delta n
+                \sigma_{\symup{n}} = \frac{T}{T_0} \frac{p_0}{p- p'} \cdot \sigma_{\symup{\Delta n}}
             \end{equation}
             errechnet.    
